@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8e9d5, #f7e4d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow-y: auto;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #F5A926;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    width: 48%; /* Mantém duas colunas no desktop */
+}
+
+label {
+    margin-top: 15px;
+    left: 10px;
+    position: relative;
+    text-align: left;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px 20px 0px;
+    border: 1px solid #ccc;
+    border-radius: 90px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #F5A926;
+    color: white;
+    border: none;
+    border-radius: 90px;
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #242424;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.logo {
+    width: 50%;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(245, 169, 38, 0.5);
+}
+
+/* Estilo da frase "Cadastre sua ONG" */
+.cadastro-texto {
+    margin-top: 30px; /* Espaçamento acima do texto */
+    font-size: 1em; /* Define o tamanho da fonte */
+    color: #F5A926; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .form-container {
+        flex-direction: column; /* Empilha os elementos no mobile */
+    }
+
+    .coluna-esquerda,
+    .coluna-direita {
+        width: 100%; /* Cada campo ocupa 100% da largura no mobile */
+    }
+
+    /* Alterando a ordem dos campos no mobile */
+    #cadastroSenha, #confirmarSenha {
+        order: 1; /* Coloca os campos de senha juntos no mobile */
+    }
+
+    #telefone {
+        order: 2; /* Campo telefone depois da senha no mobile */
+    }
+}

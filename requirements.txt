@@ -1,0 +1,10 @@
+Flask
+Flask-SQLAlchemy
+Flask-Migrate
+Flask-WTF
+Flask-Login
+Flask-Mail
+requests
+pandas
+numpy
+matplotlib
