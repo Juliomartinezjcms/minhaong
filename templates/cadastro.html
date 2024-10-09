@@ -11,32 +11,34 @@
     <div class="container">
         <img src="{{ url_for('static', filename='MinhaONG2.png') }}" alt="Logo da ONG" class="logo">
         <h1>Bem-vindo!</h1>
-        <h2>Cadastre sua ONG aqui</h2> <!-- Título atualizado -->
+        <h2>Cadastre sua ONG aqui</h2>
 
-        <div class="form-container">
-            <div class="coluna-esquerda"> <!-- Alterado de "form-column" para "coluna-esquerda" -->
-                <label for="nomeOng">Nome da ONG:</label>
-                <input type="text" id="nomeOng" name="nomeOng" required>
+        <form method="POST" action="/cadastrar_ong">
+            <div class="form-container">
+                <div class="coluna-esquerda">
+                    <label for="nomeOng">Nome da ONG:</label>
+                    <input type="text" id="nomeOng" name="nome" required>
 
-                <label for="cadastroEmail">E-mail:</label>
-                <input type="email" id="cadastroEmail" name="cadastroEmail" required>
+                    <label for="cadastroEmail">E-mail:</label>
+                    <input type="email" id="cadastroEmail" name="email" required>
 
-                <label for="cadastroSenha">Senha:</label>
-                <input type="password" id="cadastroSenha" name="cadastroSenha" required>
+                    <label for="cadastroSenha">Senha:</label>
+                    <input type="password" id="cadastroSenha" name="senha" required>
+                </div>
+                <div class="coluna-direita">
+                    <label for="seuNome">Seu Nome:</label>
+                    <input type="text" id="seuNome" name="responsavel" required>
+
+                    <label for="telefone">Seu Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+
+                    <label for="confirmarSenha">Confirmar Senha:</label>
+                    <input type="password" id="confirmarSenha" name="confirmarSenha" required>
+
+                    <button type="submit">Enviar Cadastro</button>
+                </div>
             </div>
-            <div class="coluna-direita"> <!-- Alterado de "form-column" para "coluna-direita" -->
-                <label for="seuNome">Seu Nome:</label>
-                <input type="text" id="seuNome" name="seuNome" required>
-
-                <label for="telefone">Seu Telefone:</label>
-                <input type="tel" id="telefone" name="telefone" required>
-
-                <label for="confirmarSenha">Confirmar Senha:</label>
-                <input type="password" id="confirmarSenha" name="confirmarSenha" required>
-
-                <button type="submit">Enviar Cadastro</button>
-            </div>
-        </div>
+        </form>
     </div>
 </body>
 </html>

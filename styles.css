@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8e9d5, #f7e4d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; /* Largura máxima aumentada */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Alterado para espaço consistente */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #F5A926;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que as colunas se empilhem em telas menores */
+}
+
+.form-column {
+    width: 48%; /* Mantém duas colunas no desktop */
+}
+
+label {
+    margin-top: 15px;
+    left: 10px;
+    position: relative;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas mais sutis */
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #F5A926;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas mais sutis */
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #242424;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 600px) {
+    .form-column {
+        width: 100%; /* Cada campo ocupa 100% da largura no mobile */
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f8e9d5, #f7e4d9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 800px; /* Largura máxima aumentada */
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px; /* Alterado para espaço consistente */
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+    color: #F5A926;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Permite que as colunas se empilhem em telas menores */
+}
+
+.form-column {
+    width: 48%; /* Mantém duas colunas no desktop */
+}
+
+label {
+    margin-top: 15px;
+    left: 10px;
+    position: relative;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Bordas arredondadas mais sutis */
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    background-color: #F5A926;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas mais sutis */
+    padding: 15px 20px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button[type="submit"]:hover {
+    background-color: #242424;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ajustes para telas menores (mobile) */
+@media (max-width: 600px) {
+    .form-column {
+        width: 100%; /* Cada campo ocupa 100% da largura no mobile */
+    }
+}

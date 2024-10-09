@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
     <title>Minha ONG</title>
-    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
-    <link rel="stylesheet" href="style.css"> <!-- se você tiver CSS -->
 </head>
 <body>
-    <h1>Bem-vindo à Minha ONG!</h1>
-    <p>Este é o conteúdo da sua página inicial.</p>
-    <!-- Adicione mais conteúdo conforme necessário -->
+    <div class="container">
+        <h1>Bem-vindo à Minha ONG!</h1>
+        <p>Este é o conteúdo da sua página inicial.</p>
+        <p>Estamos aqui para ajudar animais e ONGs. Navegue pelo site para saber mais sobre como você pode ajudar!</p>
+    </div>
 </body>
 </html>

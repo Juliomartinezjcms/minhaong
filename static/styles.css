@@ -99,11 +99,10 @@ input:focus {
 
 /* Estilo da frase "Cadastre sua ONG" */
 .cadastro-texto {
-    margin-top: 30px; /* Espaçamento acima do texto */
-    font-size: 1em; /* Define o tamanho da fonte */
-    color: #F5A926; /* Cor do texto */
-    text-align: center; /* Centraliza o texto */
-}
+    margin-top: 30px; 
+    font-size: 1em; 
+    color: #F5A926;
+    text-align: center; 
 
 /* Ajustes para telas menores (mobile) */
 @media (max-width: 600px) {
